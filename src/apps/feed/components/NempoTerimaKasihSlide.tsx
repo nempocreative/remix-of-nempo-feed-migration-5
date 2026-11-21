@@ -1,5 +1,5 @@
 import type { RefObject } from 'react';
-import { Disc3, Drama, MapPin } from 'lucide-react';
+import { MapPin } from 'lucide-react';
 import gscLogo from '@/assets/good-story-cafe-logo.jpg';
 import saduliLogo from '@/assets/saduli-ragap-entertainment-logo-keyed.png';
 import { NTE_ARTBOARD, nempoTerimaKasih as T, nteBulbs } from './nempo-terima-kasih';
@@ -53,12 +53,6 @@ export function NempoTerimaKasihSlide({ exportRef, checker = true }: { exportRef
           <span className="nte-ribbon"><span className="nte-ribbon-edge"><span className="nte-ribbon-fill">{ribbon}</span></span></span>
           <p className="nte-body">{body}</p>
         </div>
-
-        <p className="nte-talent">
-          <span className="nte-pill nte-pill--pink"><span className="nte-pill-icon"><Drama aria-hidden="true" /></span>{talent.dancers}</span>
-          <b className="nte-x" aria-hidden="true">×</b>
-          <span className="nte-pill nte-pill--violet"><span className="nte-pill-icon"><Disc3 aria-hidden="true" /></span>{talent.dj}</span>
-        </p>
 
         <p className="nte-closing">{closing} <span aria-hidden="true">✦</span></p>
 
