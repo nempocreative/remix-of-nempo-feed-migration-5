@@ -30,13 +30,6 @@
 .nte-ribbon-fill::after { content:''; position:absolute; left:0; right:0; top:0; height:48%; background:var(--nsd-shine); pointer-events:none; }
 .nte-body { font-size:2.5cqw; font-weight:700; line-height:1.38; color:var(--nsd-white); text-wrap:balance; }
 
-.nte-talent { margin-top:2.6cqw !important; display:flex; align-items:center; justify-content:center; gap:1.4cqw; }
-.nte-pill { display:flex; align-items:center; gap:1.3cqw; padding:.6cqw 2.8cqw .6cqw .6cqw; border-radius:99cqw; border:.45cqw solid var(--nsd-gold); box-shadow:var(--nsd-pill-shadow); font-family:'Shrikhand',serif; font-size:3.1cqw; line-height:1.15; color:var(--nsd-white); white-space:nowrap; }
-.nte-pill--pink { background:var(--nsd-pink-fill); }
-.nte-pill--violet { background:var(--nsd-violet-fill); }
-.nte-pill-icon { display:grid; place-items:center; width:4.8cqw; height:4.8cqw; border-radius:50%; background:var(--nsd-gold-edge); color:var(--nsd-ink-dark); }
-.nte-pill-icon svg { width:3cqw; height:3cqw; stroke-width:2.2; }
-.nte-x { font-size:3.4cqw; font-weight:800; color:var(--nsd-yellow); text-shadow:var(--nte-soft-shadow); }
 
 .nte-closing { margin-top:2.2cqw !important; font-size:2.3cqw; font-weight:800; font-style:italic; line-height:1.2; color:var(--nsd-white); white-space:nowrap; -webkit-text-stroke:.5cqw var(--nar-question-outline); paint-order:stroke fill; text-shadow:var(--nte-soft-shadow); }
 .nte-closing span { color:var(--nsd-yellow); font-style:normal; }

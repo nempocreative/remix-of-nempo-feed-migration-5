@@ -14,7 +14,7 @@ import './NempoTerimaKasihSlide.css';
 const BULBS = nteBulbs();
 
 export function NempoTerimaKasihSlide({ exportRef, checker = true }: { exportRef?: RefObject<HTMLElement | null>; checker?: boolean }) {
-  const { eyebrow, headline, ribbon, body, closing, title, partner, date, venue, talent } = T;
+  const { eyebrow, headline, ribbon, body, closing, title, partner, date, venue } = T;
   return (
     <section
       ref={exportRef as RefObject<HTMLElement>}
