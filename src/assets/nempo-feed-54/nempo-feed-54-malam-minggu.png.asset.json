@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "76b53ce0-5bf3-41ea-9322-d9194146fa08",
-  "project_id": "50a6d9af-9280-48b8-bf44-7dabaf0efe67",
-  "url": "/__l5e/assets-v1/76b53ce0-5bf3-41ea-9322-d9194146fa08/nempo-feed-54-malam-minggu.png",
-  "r2_key": "a/v1/50a6d9af-9280-48b8-bf44-7dabaf0efe67/76b53ce0-5bf3-41ea-9322-d9194146fa08/nempo-feed-54-malam-minggu.png",
-  "original_filename": "nempo-feed-54-malam-minggu.png",
-  "size": 11247305,
   "content_type": "image/png",
-  "created_at": "2026-11-21T15:37:35Z"
+  "created_at": "2026-11-21T15:37:35Z",
+  "original_filename": "nempo-feed-54-malam-minggu.png",
+  "project_id": "68cd6069-ffad-4c7b-bd95-7d277e618099",
+  "r2_key": "a/v1/68cd6069-ffad-4c7b-bd95-7d277e618099/76b53ce0-5bf3-41ea-9322-d9194146fa08/nempo-feed-54-malam-minggu.png",
+  "size": 11247305,
+  "url": "/__l5e/assets-v1/76b53ce0-5bf3-41ea-9322-d9194146fa08/nempo-feed-54-malam-minggu.png",
+  "version": 1
 }

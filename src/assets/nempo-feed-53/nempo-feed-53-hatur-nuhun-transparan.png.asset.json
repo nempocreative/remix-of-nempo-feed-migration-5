@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "3a635798-9407-4d92-adb3-b440054128f1",
-  "project_id": "50a6d9af-9280-48b8-bf44-7dabaf0efe67",
-  "url": "/__l5e/assets-v1/3a635798-9407-4d92-adb3-b440054128f1/nempo-feed-53-hatur-nuhun-transparan.png",
-  "r2_key": "a/v1/50a6d9af-9280-48b8-bf44-7dabaf0efe67/3a635798-9407-4d92-adb3-b440054128f1/nempo-feed-53-hatur-nuhun-transparan.png",
-  "original_filename": "nempo-feed-53-hatur-nuhun-transparan.png",
-  "size": 8928080,
   "content_type": "image/png",
-  "created_at": "2026-11-21T11:25:44Z"
+  "created_at": "2026-11-21T11:25:44Z",
+  "original_filename": "nempo-feed-53-hatur-nuhun-transparan.png",
+  "project_id": "68cd6069-ffad-4c7b-bd95-7d277e618099",
+  "r2_key": "a/v1/68cd6069-ffad-4c7b-bd95-7d277e618099/3a635798-9407-4d92-adb3-b440054128f1/nempo-feed-53-hatur-nuhun-transparan.png",
+  "size": 8928080,
+  "url": "/__l5e/assets-v1/3a635798-9407-4d92-adb3-b440054128f1/nempo-feed-53-hatur-nuhun-transparan.png",
+  "version": 1
 }
