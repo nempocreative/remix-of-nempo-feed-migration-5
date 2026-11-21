@@ -764,12 +764,6 @@
   --nte-check-b: #3a3545;
   --nte-headline-extrude: 0 .35cqw 0 #0a1a66, 0 .7cqw 0 #0a1a66, 0 1.05cqw 0 #0a1a66, 0 1.4cqw 0 #071250, 0 2.2cqw 2.6cqw color-mix(in srgb, #04140a 60%, transparent);
   --nte-soft-shadow: 0 .4cqw 1.2cqw color-mix(in srgb, #07124e 80%, transparent);
-  /* Pink marquee frame: neon tube + bulbs, fully inside the artboard. */
-  --nte-tube: linear-gradient(180deg, #ffb3e1 0%, #ff4fb4 50%, #c21f7c 100%);
-  --nte-tube-glow: 0 0 1.2cqw color-mix(in srgb, #ff4fb4 90%, transparent), 0 0 3.2cqw color-mix(in srgb, #ff2fa6 55%, transparent), inset 0 0 1cqw color-mix(in srgb, #ff4fb4 70%, transparent);
-  --nte-bulb: radial-gradient(circle at 42% 38%, #ffffff 0%, #ffe3f4 22%, #ff7fcf 52%, #e0288f 78%, #a3125f 100%);
-  --nte-bulb-glow: 0 0 .9cqw #ffffff, 0 0 2.2cqw color-mix(in srgb, #ff4fb4 95%, transparent), 0 0 4.4cqw color-mix(in srgb, #ff2fa6 55%, transparent);
-  --nte-bulb-socket: #7a1446;
 }
 /* Nempo Feed slide 48: 3:4 sawer clip — same natural palette as slides 46 and 47. */
 .nbf-root {

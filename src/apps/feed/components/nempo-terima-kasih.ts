@@ -3,7 +3,7 @@ import { nempoSaduliDj } from './nempo-saduli-dj';
 
 /**
  * NEMPO Feed slide 53 — after-event thank-you for last night's Bajidoran & DJ at Good Story Cafe:
- * text only on the event's stage frame, exported as a transparent PNG (no background photo).
+ * text only inside slide 52's lighting-truss frame, exported as a transparent PNG (no background photo).
  */
 export const NEMPO_TERIMA_KASIH_SLIDE = 53;
 
@@ -23,26 +23,4 @@ export const nempoTerimaKasih = {
   talent: nempoSaduliDj.talent,
 } as const;
 
-/** Pink marquee bulb frame (cqw of the 3:4 artboard: 100 × 133.33). */
-export const NTE_FRAME = { inset: 4.5, bulb: 3.4, step: 7 } as const;
-export const NTE_ARTBOARD = { width: 100, height: 400 / 3 } as const;
-
-export type NteBulb = { x: number; y: number };
-
-/** Evenly spaced bulbs on all four sides of the frame, corners included, none cut off by the artboard edge. */
-export function nteBulbs(): NteBulb[] {
-  const { inset, step } = NTE_FRAME;
-  const { width, height } = NTE_ARTBOARD;
-  const left = inset, right = width - inset, top = inset, bottom = height - inset;
-  const line = (x1: number, y1: number, x2: number, y2: number): NteBulb[] => {
-    const n = Math.max(1, Math.round(Math.hypot(x2 - x1, y2 - y1) / step));
-    return Array.from({ length: n }, (_, i) => ({ x: x1 + ((x2 - x1) * i) / n, y: y1 + ((y2 - y1) * i) / n }));
-  };
-  return [
-    ...line(left, top, right, top),
-    ...line(right, top, right, bottom),
-    ...line(right, bottom, left, bottom),
-    ...line(left, bottom, left, top),
-  ];
-}
 

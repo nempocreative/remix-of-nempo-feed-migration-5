@@ -1,14 +1,10 @@
-/* NEMPO 53 — after-event "Hatur Nuhun!" in a pink marquee bulb frame, transparent (text only). Stage layers reuse the nar- classes; tokens in styles.css.
+/* NEMPO 53 — after-event "Hatur Nuhun!" in slide 52's lighting-truss frame, transparent (text only). Frame, chase and lamp layers reuse the nar- classes; tokens in styles.css.
    The compound .nte-root.nar-root selector outspecifies the stage background in NempoAjakRequestSlide.css. */
 .nte-root.nar-root { background:transparent; }
 /* .nar-root p resets padding, so padded paragraphs below are prefixed with .nte-root. */
 .nte-root p,.nte-root h2 { margin:0; }
 /* Preview-only checkerboard so the empty middle reads as see-through; the PNG capture turns it off. */
 .nte-root.nte-root--checker { background-color:var(--nte-check-a); background-image:linear-gradient(45deg,var(--nte-check-b) 25%,transparent 25%,transparent 75%,var(--nte-check-b) 75%),linear-gradient(45deg,var(--nte-check-b) 25%,transparent 25%,transparent 75%,var(--nte-check-b) 75%); background-size:5cqw 5cqw; background-position:0 0,2.5cqw 2.5cqw; }
-/* Pink marquee frame: neon tube inset 4.5cqw with bulbs placed by nteBulbs(); static so the PNG matches the preview. */
-.nte-frame { position:absolute; inset:0; z-index:6; pointer-events:none; }
-.nte-tube { position:absolute; inset:4.5cqw; border-radius:1.6cqw; border:1cqw solid transparent; background:var(--nte-tube) border-box; -webkit-mask:linear-gradient(#000 0 0) padding-box exclude,linear-gradient(#000 0 0) border-box; mask:linear-gradient(#000 0 0) padding-box exclude,linear-gradient(#000 0 0) border-box; filter:drop-shadow(0 0 1.2cqw var(--nte-pink)) drop-shadow(0 0 2.6cqw var(--nsd-pink)); }
-.nte-bulb { position:absolute; width:3.4cqw; height:3.4cqw; margin:-1.7cqw 0 0 -1.7cqw; border-radius:50%; background:var(--nte-bulb); box-shadow:var(--nte-bulb-glow); outline:.35cqw solid var(--nte-bulb-socket); outline-offset:-.1cqw; }
 
 .nte-header { top:8.5cqw; left:9cqw; right:9cqw; }
 .nte-header .kmt-name { color:var(--nsd-white); text-shadow:var(--nte-soft-shadow); }
