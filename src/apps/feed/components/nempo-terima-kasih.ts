@@ -15,7 +15,6 @@ export const nempoTerimaKasih = {
   headline: { lead: 'Hatur', accent: 'Nuhun!' },
   ribbon: 'Makasih udah datang!',
   body: 'Terima kasih sudah hadir, goyang, dan enjoy bareng kami tadi malam. Kalian yang bikin malam itu hidup!',
-  closing: 'Sampai ketemu di malam seru berikutnya',
   title: nempoBajidoran.title,
   partner: nempoBajidoran.partner,
   date: nempoBajidoran.date,

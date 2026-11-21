@@ -27,9 +27,6 @@
 .nte-body { font-size:2.5cqw; font-weight:700; line-height:1.38; color:var(--nsd-white); text-wrap:balance; }
 
 
-.nte-closing { margin-top:2.2cqw !important; font-size:2.3cqw; font-weight:800; font-style:italic; line-height:1.2; color:var(--nsd-white); white-space:nowrap; -webkit-text-stroke:.5cqw var(--nar-question-outline); paint-order:stroke fill; text-shadow:var(--nte-soft-shadow); }
-.nte-closing span { color:var(--nsd-yellow); font-style:normal; }
-
 .nte-root .nte-date { margin-top:1.8cqw !important; width:max-content; display:flex; flex-direction:column; align-items:center; gap:.4cqw; padding:1.1cqw 4.6cqw 1.2cqw; border-radius:3.4cqw; background:var(--nsd-blue-fill); border:.55cqw solid var(--nsd-gold); box-shadow:var(--nsd-pill-shadow); line-height:1.1; white-space:nowrap; }
 .nte-date b { font-size:2.3cqw; font-weight:800; color:var(--nsd-white); }
 .nte-date span { display:flex; align-items:center; gap:.7cqw; font-size:2cqw; font-weight:700; color:var(--nsd-yellow); }

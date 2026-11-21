@@ -15,7 +15,7 @@ import './NempoTerimaKasihSlide.css';
  * `checker={false}` hides the preview checkerboard while the PNG is captured.
  */
 export function NempoTerimaKasihSlide({ exportRef, checker = true }: { exportRef?: RefObject<HTMLElement | null>; checker?: boolean }) {
-  const { eyebrow, headline, ribbon, body, closing, title, partner, date, venue } = T;
+  const { eyebrow, headline, ribbon, body, title, partner, date, venue } = T;
   return (
     <section
       ref={exportRef as RefObject<HTMLElement>}
@@ -55,8 +55,6 @@ export function NempoTerimaKasihSlide({ exportRef, checker = true }: { exportRef
           <span className="nte-ribbon"><span className="nte-ribbon-edge"><span className="nte-ribbon-fill">{ribbon}</span></span></span>
           <p className="nte-body">{body}</p>
         </div>
-
-        <p className="nte-closing">{closing} <span aria-hidden="true">✦</span></p>
 
         <p className="nte-date">
           <b>{date.weekday}, {date.day} {date.month} {date.year}</b>
