@@ -765,6 +765,17 @@
   --nte-headline-extrude: 0 .35cqw 0 #0a1a66, 0 .7cqw 0 #0a1a66, 0 1.05cqw 0 #0a1a66, 0 1.4cqw 0 #071250, 0 2.2cqw 2.6cqw color-mix(in srgb, #04140a 60%, transparent);
   --nte-soft-shadow: 0 .4cqw 1.2cqw color-mix(in srgb, #07124e 80%, transparent);
 }
+/* Nempo Feed slide 54: "Malam Minggu" engagement post on the event stage frame (shares the nsd-/nar- tokens). */
+.nmm-root {
+  --nmm-pink: #ff6fc8;
+  --nmm-night: linear-gradient(180deg, color-mix(in srgb, #0a1240 72%, transparent) 0%, color-mix(in srgb, #0a1240 45%, transparent) 38%, transparent 62%);
+  --nmm-moon: #fff3b8;
+  --nmm-moon-glow: none;
+  --nmm-moon-halo: drop-shadow(0 0 1.6cqw color-mix(in srgb, #fff3b8 80%, transparent)) drop-shadow(0 0 4cqw color-mix(in srgb, #ffd84a 50%, transparent));
+  --nmm-star: #fff6cc;
+  --nmm-headline-extrude: 0 .35cqw 0 #0a1a66, 0 .7cqw 0 #0a1a66, 0 1.05cqw 0 #0a1a66, 0 1.4cqw 0 #071250, 0 2.2cqw 2.6cqw color-mix(in srgb, #04140a 60%, transparent);
+  --nmm-soft-shadow: 0 .4cqw 1.2cqw color-mix(in srgb, #07124e 80%, transparent);
+}
 /* Nempo Feed slide 48: 3:4 sawer clip — same natural palette as slides 46 and 47. */
 .nbf-root {
   --nbf-night: #162d26;
