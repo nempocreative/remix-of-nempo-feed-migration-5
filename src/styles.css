@@ -785,6 +785,27 @@
   --nmm-tile-blue: linear-gradient(150deg, #8fd0ff 0%, #4fa8f5 100%);
   --nmm-tile-shine: color-mix(in srgb, #ffffff 30%, transparent);
 }
+/* Nempo Feed slides 55–56: collab call for cafes & tourist spots, basic NEMPO blue + yellow (slide 45). */
+.nko-root {
+  --nko-bg: radial-gradient(circle at 74% 30%, #1a7fd6 0%, #0b4f93 45%, #062f4d 100%);
+  --nko-glow: radial-gradient(circle, color-mix(in srgb, #ffdd00 26%, transparent) 0%, color-mix(in srgb, #5fb4ff 18%, transparent) 38%, transparent 68%);
+  --nko-yellow: #ffdd00;
+  --nko-navy: #062f4d;
+  --nko-navy-soft: color-mix(in srgb, #062f4d 62%, transparent);
+  --nko-soft: color-mix(in srgb, #ffffff 80%, transparent);
+  --nko-card: #ffffff;
+  --nko-card-shadow: 0 2.4cqw 6cqw color-mix(in srgb, #021a2e 45%, transparent);
+  --nko-icon-shadow: 0 .6cqw 1.4cqw color-mix(in srgb, #062f4d 30%, transparent);
+  --nko-glass: color-mix(in srgb, #062f4d 48%, transparent);
+  --nko-text-shadow: 0 .5cqw 2cqw color-mix(in srgb, #021a2e 40%, transparent);
+  --nko-wa: #25d366;
+  --nko-ig: linear-gradient(135deg, #f9a43b 0%, #e1306c 50%, #8a3ab9 100%);
+  --nko-tt: #111111;
+  --nko-tile-yellow: linear-gradient(150deg, #ffe94d 0%, #ffd000 100%);
+  --nko-tile-white: linear-gradient(150deg, #ffffff 0%, #e8f2ff 100%);
+  --nko-tile-blue: linear-gradient(150deg, #8fd0ff 0%, #4fa8f5 100%);
+  --nko-tile-shine: color-mix(in srgb, #ffffff 30%, transparent);
+}
 /* Nempo Feed slide 48: 3:4 sawer clip — same natural palette as slides 46 and 47. */
 .nbf-root {
   --nbf-night: #162d26;

@@ -264,6 +264,10 @@ import { NempoHariIniSlide } from './components/NempoHariIniSlide';
 import { NEMPO_TERIMA_KASIH_SLIDE } from './components/nempo-terima-kasih';
 import { NEMPO_MALAM_MINGGU_SLIDE } from './components/nempo-malam-minggu';
 import { NempoMalamMingguSlide } from './components/NempoMalamMingguSlide';
+import { NEMPO_KOLABORASI_SLIDE, NEMPO_KOLABORASI_CARA_SLIDE } from './components/nempo-kolaborasi';
+import { NempoKolaborasiSlide } from './components/NempoKolaborasiSlide';
+import kolaborasi55Png from '@/assets/nempo-feed-55/nempo-feed-55-calling-cafe-wisata.png.asset.json';
+import kolaborasi56Png from '@/assets/nempo-feed-55/nempo-feed-56-cara-kolaborasi.png.asset.json';
 import { NempoTerimaKasihSlide } from './components/NempoTerimaKasihSlide';
 import terimaKasih53Png from '@/assets/nempo-feed-53/nempo-feed-53-hatur-nuhun-transparan.png.asset.json';
 import malamMinggu54Png from '@/assets/nempo-feed-54/nempo-feed-54-malam-minggu.png.asset.json';
@@ -341,7 +345,9 @@ type FeedSlide =
   | 51
   | 52
   | 53
-  | 54;
+  | 54
+  | 55
+  | 56;
 
 type ClientSlide = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42 | 43 | 44 | 45 | 46 | 47 | 48 | 49 | 50 | 51 | 52 | 53 | 54 | 55 | 56 | 57 | 58 | 59 | 60 | 61 | 62;
 
@@ -3493,7 +3499,7 @@ function App() {
       ? isGgsStory
         ? [1, 2, 3, 4, 5, 6, 7]
         : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62]
-      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE, NEMPO_BAJIDORAN_SLIDE, NEMPO_BAJIDORAN_REEL_SLIDE, NEMPO_BAJIDORAN_SAWER_SLIDE, 49, NEMPO_SADULI_DJ_SLIDE, NEMPO_AJAK_REQUEST_SLIDE, NEMPO_HARI_INI_SLIDE, NEMPO_TERIMA_KASIH_SLIDE, NEMPO_MALAM_MINGGU_SLIDE];
+      : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, ...DIVISION_SLIDES, NEMPO_PAHLAWAN_SLIDE, NEMPO_CS_SLIDE, NEMPO_BAJIDORAN_SLIDE, NEMPO_BAJIDORAN_REEL_SLIDE, NEMPO_BAJIDORAN_SAWER_SLIDE, 49, NEMPO_SADULI_DJ_SLIDE, NEMPO_AJAK_REQUEST_SLIDE, NEMPO_HARI_INI_SLIDE, NEMPO_TERIMA_KASIH_SLIDE, NEMPO_MALAM_MINGGU_SLIDE, NEMPO_KOLABORASI_SLIDE, NEMPO_KOLABORASI_CARA_SLIDE];
   const selectedSlide =
     isGgsFeed ? activeClientSlide : activeSlide;
 
@@ -4284,6 +4290,32 @@ function App() {
                   PNG 3240×4320, teks tajam. Latar belakangnya kosong (kotak-kotak di pratinjau artinya tembus pandang) — tinggal ditumpuk di atas foto atau video acara. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.
                 </p>
               </>
+            ) : isNempoFeed && activeSlide === NEMPO_KOLABORASI_SLIDE ? (
+              <>
+                <PrebuiltPngDownload
+                  key="nempo-feed-55"
+                  src={kolaborasi55Png.url}
+                  fileName="Nempo-ID-55-Calling-Cafe-Tempat-Wisata.png"
+                  label="Download PNG · 3×"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  PNG 3240×4320, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.
+                </p>
+              </>
+            ) : isNempoFeed && activeSlide === NEMPO_KOLABORASI_CARA_SLIDE ? (
+              <>
+                <PrebuiltPngDownload
+                  key="nempo-feed-56"
+                  src={kolaborasi56Png.url}
+                  fileName="Nempo-ID-56-Cara-Kolaborasi.png"
+                  label="Download PNG · 3×"
+                  className="inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-xs font-bold text-primary-foreground transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                />
+                <p className="max-w-[92vw] text-center text-[10px] font-medium text-slate-600">
+                  PNG 3240×4320, teks tajam. Di iPad/iPhone pilih “Simpan Gambar” atau “Simpan ke File”.
+                </p>
+              </>
             ) : isNempoFeed && activeSlide === NEMPO_MALAM_MINGGU_SLIDE ? (
               <>
                 <PrebuiltPngDownload
@@ -4526,6 +4558,10 @@ function App() {
           <NempoTerimaKasihCapture exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === NEMPO_MALAM_MINGGU_SLIDE ? (
           <NempoMalamMingguSlide exportRef={exportRef} />
+        ) : isNempoFeed && activeSlide === NEMPO_KOLABORASI_SLIDE ? (
+          <NempoKolaborasiSlide page="call" exportRef={exportRef} />
+        ) : isNempoFeed && activeSlide === NEMPO_KOLABORASI_CARA_SLIDE ? (
+          <NempoKolaborasiSlide page="cara" exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === 49 ? (
           <NempoDjSlide src={dj49VideoAsset.url} poster={dj49PosterAsset.url} exportRef={exportRef} />
         ) : isNempoFeed && activeSlide === NEMPO_BAJIDORAN_SAWER_SLIDE ? (
