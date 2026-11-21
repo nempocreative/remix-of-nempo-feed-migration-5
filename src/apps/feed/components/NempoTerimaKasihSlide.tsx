@@ -2,18 +2,17 @@ import type { RefObject } from 'react';
 import { Disc3, Drama, MapPin } from 'lucide-react';
 import gscLogo from '@/assets/good-story-cafe-logo.jpg';
 import saduliLogo from '@/assets/saduli-ragap-entertainment-logo-keyed.png';
-// The event's stage frame (same clean copy as the Nempo Story cover).
-import frameAsset from '@/assets/nempo-story/nempo-story-stage-frame.webp.asset.json';
-import { nempoTerimaKasih as T } from './nempo-terima-kasih';
-import { STAGE_LAMPS, stageLightStyle } from './nempo-stage-lights';
+import { NTE_ARTBOARD, nempoTerimaKasih as T, nteBulbs } from './nempo-terima-kasih';
 import './NempoAjakRequestSlide.css';
 import './NempoTerimaKasihSlide.css';
 
 /**
- * NEMPO Feed slide 53 (3:4): after-event "Hatur Nuhun!" — text only inside the event's stage frame,
- * no background, so the PNG is transparent. Static so the download matches the preview.
+ * NEMPO Feed slide 53 (3:4): after-event "Hatur Nuhun!" — text only inside a pink marquee bulb frame,
+ * no background, so the PNG is transparent. Text sits in the lower part so the event video stays visible above it. Static so the download matches the preview.
  * `checker={false}` hides the preview checkerboard while the PNG is captured.
  */
+const BULBS = nteBulbs();
+
 export function NempoTerimaKasihSlide({ exportRef, checker = true }: { exportRef?: RefObject<HTMLElement | null>; checker?: boolean }) {
   const { eyebrow, headline, ribbon, body, closing, title, partner, date, venue, talent } = T;
   return (
@@ -22,10 +21,10 @@ export function NempoTerimaKasihSlide({ exportRef, checker = true }: { exportRef
       className={`nar-root nte-root kmt-root${checker ? ' nte-root--checker' : ''}`}
       aria-label={`${headline.lead} ${headline.accent} ${body} ${title} & ${partner}, ${date.weekday} ${date.day} ${date.month} ${date.year} di ${venue.name}.`}
     >
-      <img className="nar-frame" src={frameAsset.url} alt="" aria-hidden="true" width={1152} height={1536} draggable={false} />
-      <span className="nar-lamps" aria-hidden="true">
-        {STAGE_LAMPS.map((l, i) => (
-          <span key={i} className={`nar-lamp nar-lamp--${l.tone}`} style={stageLightStyle(l)} />
+      <span className="nte-frame" aria-hidden="true">
+        <span className="nte-tube" />
+        {BULBS.map((b, i) => (
+          <span key={i} className="nte-bulb" style={{ left: `${b.x}cqw`, top: `${(b.y / NTE_ARTBOARD.height) * 100}%` }} />
         ))}
       </span>
 

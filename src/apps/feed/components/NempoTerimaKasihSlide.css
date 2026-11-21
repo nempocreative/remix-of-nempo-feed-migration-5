@@ -1,34 +1,36 @@
-/* NEMPO 53 — after-event "Hatur Nuhun!" on the event's stage frame, transparent (text only). Stage layers reuse the nar- classes; tokens in styles.css.
+/* NEMPO 53 — after-event "Hatur Nuhun!" in a pink marquee bulb frame, transparent (text only). Stage layers reuse the nar- classes; tokens in styles.css.
    The compound .nte-root.nar-root selector outspecifies the stage background in NempoAjakRequestSlide.css. */
 .nte-root.nar-root { background:transparent; }
 /* .nar-root p resets padding, so padded paragraphs below are prefixed with .nte-root. */
 .nte-root p,.nte-root h2 { margin:0; }
 /* Preview-only checkerboard so the empty middle reads as see-through; the PNG capture turns it off. */
 .nte-root.nte-root--checker { background-color:var(--nte-check-a); background-image:linear-gradient(45deg,var(--nte-check-b) 25%,transparent 25%,transparent 75%,var(--nte-check-b) 75%),linear-gradient(45deg,var(--nte-check-b) 25%,transparent 25%,transparent 75%,var(--nte-check-b) 75%); background-size:5cqw 5cqw; background-position:0 0,2.5cqw 2.5cqw; }
-/* Static lamps: the download is a still, so nothing blinks in the preview either. */
-.nte-root .nar-lamp { animation:none; opacity:.9; }
+/* Pink marquee frame: neon tube inset 4.5cqw with bulbs placed by nteBulbs(); static so the PNG matches the preview. */
+.nte-frame { position:absolute; inset:0; z-index:6; pointer-events:none; }
+.nte-tube { position:absolute; inset:4.5cqw; border-radius:1.6cqw; border:1cqw solid transparent; background:var(--nte-tube) border-box; -webkit-mask:linear-gradient(#000 0 0) padding-box exclude,linear-gradient(#000 0 0) border-box; mask:linear-gradient(#000 0 0) padding-box exclude,linear-gradient(#000 0 0) border-box; filter:drop-shadow(0 0 1.2cqw var(--nte-pink)) drop-shadow(0 0 2.6cqw var(--nsd-pink)); }
+.nte-bulb { position:absolute; width:3.4cqw; height:3.4cqw; margin:-1.7cqw 0 0 -1.7cqw; border-radius:50%; background:var(--nte-bulb); box-shadow:var(--nte-bulb-glow); outline:.35cqw solid var(--nte-bulb-socket); outline-offset:-.1cqw; }
 
-.nte-header { top:8cqw; left:15cqw; right:15cqw; }
+.nte-header { top:8.5cqw; left:9cqw; right:9cqw; }
 .nte-header .kmt-name { color:var(--nsd-white); text-shadow:var(--nte-soft-shadow); }
 
-.nte-copy { position:absolute; z-index:8; top:20cqw; left:12cqw; right:12cqw; display:flex; flex-direction:column; align-items:center; text-align:center; }
+.nte-copy { position:absolute; z-index:8; bottom:10cqw; left:9cqw; right:9cqw; display:flex; flex-direction:column; align-items:center; text-align:center; }
 
 .nte-root .nte-kicker { padding:.8cqw 3.6cqw .9cqw; border-radius:99cqw; background:var(--nsd-red-fill); border:.45cqw solid var(--nsd-gold); box-shadow:var(--nsd-pill-shadow); font-size:2.9cqw; font-weight:800; font-style:italic; line-height:1.1; color:var(--nsd-white); white-space:nowrap; }
 
-.nte-headline { margin-top:1.6cqw !important; display:flex; flex-direction:column; align-items:center; font-family:'Shrikhand',serif; font-weight:400; font-size:14.2cqw; line-height:.98; color:var(--nar-question-fill); transform:rotate(-3deg); }
+.nte-headline { margin-top:1.4cqw !important; display:flex; flex-direction:row; align-items:baseline; gap:2.4cqw; font-family:'Shrikhand',serif; font-weight:400; font-size:10.8cqw; line-height:.98; color:var(--nar-question-fill); transform:rotate(-3deg); }
 .nte-headline > span { position:relative; white-space:nowrap; -webkit-text-stroke:.55cqw var(--nsd-white); paint-order:stroke fill; text-shadow:var(--nte-headline-extrude); }
-.nte-headline > span + span { color:var(--nte-pink); margin-left:6cqw; }
+.nte-headline > span + span { color:var(--nte-pink); }
 /* Dark outline behind the letters so the yellow stays readable over any footage. */
 .nte-headline > span::before { content:attr(data-text); position:absolute; left:0; top:0; z-index:-1; color:transparent; -webkit-text-stroke:1.8cqw var(--nar-question-outline); paint-order:stroke fill; text-shadow:none; }
 
-.nte-panel { position:relative; margin-top:5.6cqw; width:68cqw; padding:5cqw 4cqw 2.8cqw; border-radius:3cqw; background:var(--nar-panel-fill); border:.8cqw solid var(--nsd-gold); box-shadow:var(--nar-panel-shadow); }
+.nte-panel { position:relative; margin-top:4.6cqw; width:76cqw; padding:4.4cqw 4cqw 2.4cqw; border-radius:3cqw; background:var(--nar-panel-fill); border:.8cqw solid var(--nsd-gold); box-shadow:var(--nar-panel-shadow); }
 .nte-ribbon { --nte-notch:2.2cqw; --nte-edge:.5cqw; position:absolute; top:-3.8cqw; left:50%; transform:translateX(-50%) rotate(-2deg); display:inline-flex; filter:var(--nsd-ribbon-drop); }
 .nte-ribbon-edge { display:flex; padding:var(--nte-edge); background:var(--nsd-gold-edge); clip-path:polygon(0 0,100% 0,calc(100% - var(--nte-notch)) 50%,100% 100%,0 100%,var(--nte-notch) 50%); }
 .nte-ribbon-fill { position:relative; display:block; padding:1cqw calc(var(--nte-notch) + 3cqw) 1.1cqw; background:var(--nsd-pink-fill); color:var(--nsd-white); font-size:3.3cqw; font-weight:800; line-height:1.2; white-space:nowrap; clip-path:polygon(0 0,100% 0,calc(100% - var(--nte-notch) + var(--nte-edge) * .5) 50%,100% 100%,0 100%,calc(var(--nte-notch) - var(--nte-edge) * .5) 50%); }
 .nte-ribbon-fill::after { content:''; position:absolute; left:0; right:0; top:0; height:48%; background:var(--nsd-shine); pointer-events:none; }
-.nte-body { font-size:3.25cqw; font-weight:700; line-height:1.38; color:var(--nsd-white); text-wrap:balance; }
+.nte-body { font-size:3.05cqw; font-weight:700; line-height:1.38; color:var(--nsd-white); text-wrap:balance; }
 
-.nte-talent { margin-top:3.4cqw !important; display:flex; align-items:center; justify-content:center; gap:1.4cqw; }
+.nte-talent { margin-top:2.6cqw !important; display:flex; align-items:center; justify-content:center; gap:1.4cqw; }
 .nte-pill { display:flex; align-items:center; gap:1.3cqw; padding:.6cqw 2.8cqw .6cqw .6cqw; border-radius:99cqw; border:.45cqw solid var(--nsd-gold); box-shadow:var(--nsd-pill-shadow); font-family:'Shrikhand',serif; font-size:3.1cqw; line-height:1.15; color:var(--nsd-white); white-space:nowrap; }
 .nte-pill--pink { background:var(--nsd-pink-fill); }
 .nte-pill--violet { background:var(--nsd-violet-fill); }
@@ -36,10 +38,10 @@
 .nte-pill-icon svg { width:3cqw; height:3cqw; stroke-width:2.2; }
 .nte-x { font-size:3.4cqw; font-weight:800; color:var(--nsd-yellow); text-shadow:var(--nte-soft-shadow); }
 
-.nte-closing { margin-top:2.8cqw !important; font-size:2.75cqw; font-weight:800; font-style:italic; line-height:1.2; color:var(--nsd-white); white-space:nowrap; -webkit-text-stroke:.5cqw var(--nar-question-outline); paint-order:stroke fill; text-shadow:var(--nte-soft-shadow); }
+.nte-closing { margin-top:2.2cqw !important; font-size:2.75cqw; font-weight:800; font-style:italic; line-height:1.2; color:var(--nsd-white); white-space:nowrap; -webkit-text-stroke:.5cqw var(--nar-question-outline); paint-order:stroke fill; text-shadow:var(--nte-soft-shadow); }
 .nte-closing span { color:var(--nsd-yellow); font-style:normal; }
 
-.nte-root .nte-date { margin-top:2.2cqw !important; width:max-content; display:flex; flex-direction:column; align-items:center; gap:.4cqw; padding:1.1cqw 4.6cqw 1.2cqw; border-radius:3.4cqw; background:var(--nsd-blue-fill); border:.55cqw solid var(--nsd-gold); box-shadow:var(--nsd-pill-shadow); line-height:1.1; white-space:nowrap; }
+.nte-root .nte-date { margin-top:1.8cqw !important; width:max-content; display:flex; flex-direction:column; align-items:center; gap:.4cqw; padding:1.1cqw 4.6cqw 1.2cqw; border-radius:3.4cqw; background:var(--nsd-blue-fill); border:.55cqw solid var(--nsd-gold); box-shadow:var(--nsd-pill-shadow); line-height:1.1; white-space:nowrap; }
 .nte-date b { font-size:2.7cqw; font-weight:800; color:var(--nsd-white); }
 .nte-date span { display:flex; align-items:center; gap:.7cqw; font-size:2.3cqw; font-weight:700; color:var(--nsd-yellow); }
 .nte-date svg { width:2.5cqw; height:2.5cqw; }
