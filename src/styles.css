@@ -765,16 +765,25 @@
   --nte-headline-extrude: 0 .35cqw 0 #0a1a66, 0 .7cqw 0 #0a1a66, 0 1.05cqw 0 #0a1a66, 0 1.4cqw 0 #071250, 0 2.2cqw 2.6cqw color-mix(in srgb, #04140a 60%, transparent);
   --nte-soft-shadow: 0 .4cqw 1.2cqw color-mix(in srgb, #07124e 80%, transparent);
 }
-/* Nempo Feed slide 54: "Malam Minggu" engagement post on the event stage frame (shares the nsd-/nar- tokens). */
+/* Nempo Feed slide 54: "Malam Minggu" engagement post in the basic NEMPO blue + yellow look (slide 45). */
 .nmm-root {
-  --nmm-pink: #ff6fc8;
-  --nmm-night: linear-gradient(180deg, color-mix(in srgb, #0a1240 72%, transparent) 0%, color-mix(in srgb, #0a1240 45%, transparent) 38%, transparent 62%);
-  --nmm-moon: #fff3b8;
-  --nmm-moon-glow: none;
-  --nmm-moon-halo: drop-shadow(0 0 1.6cqw color-mix(in srgb, #fff3b8 80%, transparent)) drop-shadow(0 0 4cqw color-mix(in srgb, #ffd84a 50%, transparent));
-  --nmm-star: #fff6cc;
-  --nmm-headline-extrude: 0 .35cqw 0 #0a1a66, 0 .7cqw 0 #0a1a66, 0 1.05cqw 0 #0a1a66, 0 1.4cqw 0 #071250, 0 2.2cqw 2.6cqw color-mix(in srgb, #04140a 60%, transparent);
-  --nmm-soft-shadow: 0 .4cqw 1.2cqw color-mix(in srgb, #07124e 80%, transparent);
+  --nmm-bg: radial-gradient(circle at 76% 30%, #1a7fd6 0%, #0b4f93 45%, #062f4d 100%);
+  --nmm-glow: radial-gradient(circle, color-mix(in srgb, #ffdd00 24%, transparent) 0%, color-mix(in srgb, #5fb4ff 18%, transparent) 38%, transparent 68%);
+  --nmm-yellow: #ffdd00;
+  --nmm-navy: #062f4d;
+  --nmm-navy-soft: color-mix(in srgb, #062f4d 62%, transparent);
+  --nmm-soft: color-mix(in srgb, #ffffff 80%, transparent);
+  --nmm-card: #ffffff;
+  --nmm-card-shadow: 0 2.4cqw 6cqw color-mix(in srgb, #021a2e 45%, transparent);
+  --nmm-icon-shadow: 0 .6cqw 1.4cqw color-mix(in srgb, #062f4d 30%, transparent);
+  --nmm-text-shadow: 0 .5cqw 2cqw color-mix(in srgb, #021a2e 40%, transparent);
+  --nmm-moon: linear-gradient(160deg, #fff6c2 0%, #ffe45c 55%, #ffd000 100%);
+  --nmm-moon-halo: drop-shadow(0 0 1.6cqw color-mix(in srgb, #ffe45c 70%, transparent)) drop-shadow(0 0 5cqw color-mix(in srgb, #ffdd00 40%, transparent));
+  --nmm-star: #fff6c2;
+  --nmm-tile-yellow: linear-gradient(150deg, #ffe94d 0%, #ffd000 100%);
+  --nmm-tile-white: linear-gradient(150deg, #ffffff 0%, #e8f2ff 100%);
+  --nmm-tile-blue: linear-gradient(150deg, #8fd0ff 0%, #4fa8f5 100%);
+  --nmm-tile-shine: color-mix(in srgb, #ffffff 30%, transparent);
 }
 /* Nempo Feed slide 48: 3:4 sawer clip — same natural palette as slides 46 and 47. */
 .nbf-root {

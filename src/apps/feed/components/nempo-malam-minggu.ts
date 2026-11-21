@@ -1,5 +1,5 @@
 /**
- * NEMPO Feed slide 54 — Saturday-night engagement post on the stage frame of slides 51–53:
+ * NEMPO Feed slide 54 — Saturday-night engagement post in the basic NEMPO blue look (slide 45):
  * "Malam Minggu, kamu ke mana?" with numbered answers followers pick in the comments.
  */
 export const NEMPO_MALAM_MINGGU_SLIDE = 54;
@@ -11,9 +11,9 @@ export type MalamMingguIcon = 'coffee' | 'heart' | 'music' | 'bed';
 
 export const nempoMalamMinggu = {
   kicker: 'Sabtu malam',
-  headline: { lead: 'Malam', accent: 'Minggu' },
-  question: 'kamu ke mana?',
-  ribbon: 'Pilih satu',
+  headline: { lead: 'Malam Minggu,', accent: 'kamu ke mana?' },
+  subtitle: 'Pilih satu jawaban, terus tulis nomornya di kolom komentar ya!',
+  pickLabel: 'Pilih satu',
   options: [
     { label: 'Nongkrong bareng temen', icon: 'coffee' },
     { label: 'Jalan sama ayang', icon: 'heart' },
